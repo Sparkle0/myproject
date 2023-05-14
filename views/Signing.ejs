@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+  <%- include('./partials/head') %>
+
+  <body id="body">
+    <%- include('./partials/header') %>
+
+    <main id="main">
+      <section>
+        <h1>Create new account</h1>
+
+        <form method="POST" action="/all-articles">
+          <label for="email">Email </label>
+          <input name="email" id="email" type="email" placeholder="please enter your email" />
+
+          <label for="password">Password </label>
+          <input name="password" id="password" type="password" placeholder="please enter your password" />
+
+          <button class="signIn">Sign In</button>
+        </form>
+      </section>
+    </main>
+
+    <%- include('./partials/footer') %>
+  </body>
+</html>
